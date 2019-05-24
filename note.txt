@@ -1,0 +1,8 @@
+Catatan Dokumentasi untuk project Auction.
+
+semua script sudah ada pada file javacript jadi tidak ada yg di simpan di php maker,
+agar ketika ada kekurangan untuk lebih mudah di debug kembali tidak harus di generate lagi oleh php maker.
+
+untuk script global ada di file :/auction/phpjs/customjs/global_auction.js
+dan script sisanya semuanya ada di dalam folder :/auction/phpjs/customjs/
+dan ada juga file css custom semuanya di simpan di dalam folder :/auction/phpcss/customcss/

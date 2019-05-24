@@ -1,0 +1,153 @@
+<div class="col-sm-12 v-tr-lelang-item" style="">
+	<div class="row custom_message_lost">
+		<div class=" panel-custom">
+			<h4>Connection with Server Disconect, Please Refresh this Page Browser.</h4>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="custom-width-1 panel-custom">
+			<div class="col-sm-12 tittle-v-tr-lelang-item">{{{caption auc_number}}}</div>
+			<div class="col-sm-12 content-v-tr-lelang-item">{{{value auc_number}}}</div>
+		</div>
+		<div class="custom-width-2 panel-custom">
+			<div class="col-sm-12 tittle-v-tr-lelang-item">Server Time</div>
+			<div class="col-sm-12 content-v-tr-lelang-item">
+				<span class="" id="date_lelang"></span><br />
+				<span class="" id="time_lelang"></span>
+			</div>
+		</div>
+		<div class="custom-width-3 panel-custom">
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="tittle-v-tr-lelang-item">{{{caption start_bid}}}</div>
+					<div class="start-bid-v-tr-lelang-item">{{{value start_bid}}}</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="tittle-v-tr-lelang-item">{{{caption close_bid}}}</div>
+					<div class="close-bid-v-tr-lelang-item">{{{value close_bid}}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="custom-width-4 panel-custom">
+			<div class="col-sm-12 tittle-v-tr-lelang-item"> Time Left </div>
+			<div class="col-sm-12 netto-item content-v-tr-lelang-item">
+				<span id="countDown">
+					<span></span>
+				</span>
+				<div id="auc_status" style="display: none;">{{{value auc_status}}}</div>
+				<div id="row_id_lelang_item" style="display: none;">{{{value row_id}}}</div>
+			</div>
+		</div>
+		<div class="custom-width-5 panel-custom">
+			<div class="col-sm-12 tittle-v-tr-lelang-item"> {{{caption total_sack}}} </div>
+			<div class="col-sm-12 sack-item content-v-tr-lelang-item"> {{{value total_sack}}} </div>
+		</div>
+		<!-- <div class="custom-width-5 panel-custom">
+			<div class="col-sm-12 tittle-v-tr-lelang-item"> {{{caption total_netto}}} </div>
+			<div class="col-sm-12 netto-item content-v-tr-lelang-item"> {{{value total_netto}}} </div>
+		</div> -->
+		<div class="custom-width-6 panel-custom">
+			<div class="col-sm-12 tittle-v-tr-lelang-item"> {{{caption total_gross}}} </div>
+			<div class="col-sm-12 gross-item content-v-tr-lelang-item"> {{{value total_gross}}} </div>
+		</div>
+	</div>
+	
+	<div class="row field-br custom_auc_notes ">
+		<div class="custom_auc_notes_width_1 panel-custom">
+			<div class="col-sm-2 tittle-v-tr-lelang-item">{{{caption auc_notes}}}</div>
+			<div class="col-sm-10">{{{value auc_notes}}}</div>
+		</div>
+		<div class="custom_auc_notes_width_2 panel-custom">
+			<div class="col-sm-3 tittle-v-tr-lelang-item">{{{caption rate}}}</div>
+			<div class="col-sm-9">{{{value rate}}}</div>
+		</div>
+	</div>
+	
+</div>
+
+<div class="modal fade" id="modalBid" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3 class="modal-title" id="myModalLabel">BID</h3>
+		</div>
+		<div class="modal-body">
+			<div id="modal-bid">
+				<div class="col-sm-12">
+					<div class="col-sm-12 panel-custom">
+						<div class="col-sm-12 tittle-time-bid">Server Time</div>
+						<div class="col-sm-12 content-v-tr-lelang-item">
+							<span class="" id="date_lelang_bid"></span><br />
+							<span class="" id="time_lelang_bid"></span>
+						</div>
+					</div>
+					<div class="row field-br">
+						<div class="col-sm-3 tittle-bid">Nilai Bid</div>
+						<div class="col-sm-9">
+							<div class="input-group" >
+								<input type="text" id="bid_value" class="form-control"/>
+								<span class="input-group-btn">
+									<button id="bidUp" type="button" class="btn btn-default btn-sm" style="font-size: 12px; height: 20px; padding: 0 10px;">
+										<i class="fa fa-angle-up" aria-hidden="true"></i>
+									</button><br>
+									<button id="bidDown" type="button" class="btn btn-default btn-sm" style="font-size: 12px; height: 20px; padding: 0 10px;">
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+			<button type="button" class="btn btn-primary" onclick="addBid()">Save</button>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalReqSample" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3 class="modal-title" id="myModalLabel">Request Sample</h3>
+		</div>
+		<div class="modal-body">
+			<div class="message-req-sample">
+				<h4>Anda Yakin ingin mengajukan permintaan sample teh?.</h4>
+			</div>
+			<br>
+			<div class="ewMessageDialog success-req-sample" style="display: none;">
+				<div class="alert alert-success ewSuccess">
+					<!-- <button type="button" class="close" data-dismiss="alert">×</button> -->
+					<h4>Permintaan sampel teh akan segera kami kirim, terimakasih.</h4>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<div class="spinner-border text-danger spinner_req" role="status" style="display: none; margin-right: 10px;">
+				<span class="sr-only">Loading...</span>
+			</div>
+			<button id="addReqSample" type="button" class="btn btn-primary" onclick="addReqSample()" >
+				Submit
+			</button>
+			<button id="cancelReqSample" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>			
+		</div>
+		</div>
+	</div>
+</div>
+
+<div id="loader-wrapper">
+	<div id="loader"></div>
+ 
+	<div class="loader-section section-left"></div>
+	<div class="loader-section section-right"></div>
+ 
+</div>

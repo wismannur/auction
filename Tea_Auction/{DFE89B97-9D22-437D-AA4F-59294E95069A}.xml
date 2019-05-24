@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration date="2019/05/24" author="e.World Technology Ltd.">
+  <project id="{DFE89B97-9D22-437D-AA4F-59294E95069A}" file="D:\Document_Works\PHP Maker\tea\Tea-Auction.pmp" name="Tea_Auction" product="PHPMaker" version="14.0" datetime="2019/05/24 09:11:20" languagefolder="phplang" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0;1,&quot;Member&quot;,0">
+    <table id="members" name="members" caption="User Member" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0;1,&quot;Member&quot;,0" priv="1" />
+    <table id="tr_lelang_item" name="tr_lelang_item" caption="Catalog Items" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,0" priv="1" />
+    <table id="tr_lelang_master" name="tr_lelang_master" caption="Auction Schedules" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,0" priv="1" />
+    <table id="userlevelpermissions" name="userlevelpermissions" caption="userlevelpermissions" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,0" priv="1" />
+    <table id="userlevels" name="userlevels" caption="userlevels" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,0" priv="1" />
+    <table id="log_lastbid" name="log_lastbid" caption="log lastbid" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0;1,&quot;Member&quot;,0" priv="1" />
+    <table id="tbl_faq" name="tbl_faq" caption="Frequently Asked Questions" userlevel="-2,&quot;Anonymous&quot;,104;0,&quot;Default&quot;,111;1,&quot;Member&quot;,104" priv="1" />
+    <table id="tr_bid" name="tr_bid" caption="" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,1" priv="1" />
+    <table id="tr_payment" name="tr_payment" caption="Payment Confirmation" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,105" priv="1" />
+    <table id="v_tr_lelang_master" name="v_tr_lelang_master" caption="Auction List" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,109;1,&quot;Member&quot;,104" priv="1" />
+    <table id="v_tr_lelang_item" name="v_tr_lelang_item" caption="Catalog Item" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,109;1,&quot;Member&quot;,104" priv="1" />
+    <table id="v_proforma" name="v_proforma" caption="Proforma Invoice" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0;1,&quot;Member&quot;,105" priv="1" />
+    <table id="tr_req_sample" name="tr_req_sample" caption="Request Sample" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,0" priv="1" />
+    <table id="v_req_sample" name="v_req_sample" caption="Request Sample List" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,0" priv="1" />
+    <table id="v_bid_histories" name="v_bid_histories" caption="Bid Histories" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0;1,&quot;Member&quot;,72" priv="1" />
+    <table id="v_payment_histories" name="v_payment_histories" caption="Payment Histories" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0;1,&quot;Member&quot;,72" priv="1" />
+    <table id="v_auction_date" name="v_auction_date" caption="Auction Schedules" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,72" priv="1" />
+    <table id="home_php" name="home.php" caption="" userlevel="-2,&quot;Anonymous&quot;,8;0,&quot;Default&quot;,8;1,&quot;Member&quot;,8" priv="1" />
+    <table id="v_payment_confirmation" name="v_payment_confirmation" caption="Payment List" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,0" priv="1" />
+    <table id="v_auction_list_admin" name="v_auction_list_admin" caption="Auction List" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,0" priv="1" />
+    <table id="v_bid_histories_admin" name="v_bid_histories_admin" caption="Bid Transactions" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,0" priv="1" />
+    <table id="tbl_currency" name="tbl_currency" caption="tbl currency" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0;1,&quot;Member&quot;,0" priv="1" />
+    <table id="tr_home" name="tr_home" caption="Homepage Message" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,111;1,&quot;Member&quot;,0" priv="1" />
+  </project>
+</configuration>
